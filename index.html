@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Move+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+
+  body {
+      background-color: #f3f4f6;
+    }
+    .font {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .bg-hero {
+      background: linear-gradient(135deg, #000 0%, #151914 80%);
+    }
+
+    .bg-about {
+      background: linear-gradient(115deg, #000 0%, #151f1a 100%);
+    }
+
+    .green-pop {
+      background-color: rgb(47, 185, 86);
+    }
+    
+  </style>
+</head>
+
+<body class="bg-hero overflow-x-hidden">
+  <header class="flex justify-around items-center bg-black text-white h-15 md:h-20 fixed w-full z-10">
+    <div class="logo">
+      <h2 class="font-bold italic text-3xl md:text-[2.2rem] text-green-400">Move+</h2>
+    </div>
+
+    <nav id="menu">
+      <ul class="md:flex gap-6 font items-center justify-center hidden ">
+        <li><a href="" class="text-[1rem] font-semibold hover:text-green-300/80 transition-all duration-300">Inicio</a>
+        </li>
+        <li><a href="" class="text-[1rem] font-semibold hover:text-green-300/80 transition-all duration-300">Sobre</a>
+        </li>
+
+
+        
+        <li><a href=""
+            class="text-[1rem] font-semibold hover:text-green-300/80 transition-all duration-300">Modalidades</a></li>
+        <li><a href="" class="text-[1rem] font-semibold hover:text-green-300/80 transition-all duration-300">Planos</a>
+        </li>
+        <li><a href=""
+            class="text-[1rem] font-semibold hover:text-green-300/80 transition-all duration-300">Instrutores</a></li>
+        <li><a href="" class="text-[1rem] font-semibold hover:text-green-300/80 transition-all duration-300">Contato</a>
+        </li>
+      </ul>
+
+      <div class="menuMobile">
+         
+      </div>
+    </nav>
+  </header>
+
+  <main class="font">
+    <!-- Hero -->
+  
+    <section class="inicio-hero relative pt-20">
+
+    <div class="container-geral min-h-screen w-full  text-white flex  justify-center  md:justify-around items-center bg-hero md:flex-row flex-col h-full p-6 md:pt-20">
+
+         <div class="contentPrimeiro flex flex-col gap-8 items-center justify-center text-center md:items-start md:text-left">
+      
+          <div  class="title uppercase font-bold">
+            <h1 class="flex flex-col text-2xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-[3.8rem] "> Treine Seu Corpo,
+              <span>Sua Mente & Conquiste</span>
+               <span class="text-green-400"> Resultados Reais</span>
+            </h1>
+           
+          </div>
+
+          <div class="subtitle max-w-xl">
+            
+             <p class="text-[#ccc] text-base text-[0.8rem] md:text-[1rem]">Na Move+, acreditamos em um treino que vai além da estética. Focamos na energia entre corpo e mente, oferecendo uma infraestrutura completa e um time de profissionais que te guia em cada etapa. Você não apenas treina, mas adota um estilo de vida que garante resultados reais e duradouros. Venha descobrir o prazer de se mover com propósito e energia.</p>
+          </div>
+
+          <div class="btns flex gap-5 flex-wrap justify-center md:justify-start">
+             <button class="bg-gradient-to-br from-[#10B981] to-[#34d3996b]  text-white font-bold py-3 px-10 rounded-md   transition-transform hover:-translate-y-1 duration-300 hover:shadow-2xl hover:shadow-[#111] hover:shadow cursor-pointer">Matricula-se</button>
+
+             <button class="border border-green-300 text-white font-bold py-2 px-5 rounded-md hover:bg-green-300/50 transition duration-500 cursor-pointer">Ver Planos</button>
+          </div>
+
+   </div>
+
+
+      <div class="contentSegundo mt-20 md:mt-0">
+                <img src="./image/banner.jpg" alt="" width="400px" class="hover:-translate-y-2 duration-500 transition-all rounded-md">
+   </div>
+
+
+
+        </div>
+  
+    </section>
+
+    <!-- About-us -->
+    <section class="md:mt-40 mt-20">
+      <div class=" container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-12 text-white">
+
+        <div class="flex flex-col gap-8 lg:w-1/2 ">
+          <div class="title-about">
+            <h2 class="text-4xl md:text-5xl font-semibold text-green-400  lg:text-left">Sobre Nós</h2>
+          </div>
+
+          <div class="subtitle-about text-[1.1rem] flex flex-col gap-5 text-[#ccc] max-w-2xl ">
+            <p>Na Move+, acreditamos que treinar vai muito além da estética: é saúde, disposição e qualidade de vida.
+              Nossa missão é transformar a rotina dos nossos alunos através de treinos modernos, acompanhamento de
+              instrutores experientes e um ambiente acolhedor para todos os níveis.</p>
+
+            <p>
+              Com uma estrutura completa e equipamentos de última geração, oferecemos modalidades que vão desde a
+              musculação tradicional até treinos funcionais, cross, dança e muito mais. Cada aluno recebe atenção
+              especial para alcançar seus objetivos com segurança, motivação e evolução contínua.
+            </p>
+          </div>
+
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-4">
+
+
+            <div class="text-center">
+              <span class="text-3xl font-semibold text-green-400 ">1000+</span>
+              <p class="text-[1rem] text-[#ccc]">Alunos</p>
+            </div>
+
+            <div class="text-center">
+              <span class="text-3xl font-semibold text-green-400">15+</span>
+              <p class="text-[1rem] text-[#ccc] ">Polos</p>
+            </div>
+
+            <div class="text-center">
+              <span class="text-3xl font-semibold text-green-400"> 10+</span>
+              <p class="text-[1rem]  text-[#ccc]">Anos</p>
+            </div>
+
+            <div class="text-center ">
+              <span class="text-3xl font-semibold text-green-400"> 95%</span>
+              <p class="text-[1rem] text-[#ccc]">De Satisfação</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="./image/img-about.jpg" alt="" class="w-[450px] rounded-lg hover:-translate-y-2 transition-transform duration-500">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Modalidades -->
+    <section class=" md:mt-40 mt-20">
+      <div class="title text-center ">
+        <h2 class="text-5xl text-green-400 font-semibold pb-4">Modalidades</h2>
+        <p class="text-[#ccc]">Diversas opções para voce se exercitar</p>
+      </div>
+
+      <div
+        class="text-white gap-5 max-w-6xl mx-auto grid   justify-center grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(250px,1fr))] md:grid-cols-3 p-10">
+
+        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
+          <div class="">
+            <img src="./image/mod01.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
+          </div>
+
+          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px]">
+            <h2 class="text-[1.2rem] font-bold  text-green-400">Musculação</h2>
+            <p class="text-[0.9rem] text-[#ccc]">Treinos completos com equipamentos modernos para ganho de força.</p>
+          </div>
+
+        </div>
+        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
+          <div class="">
+            <img src="./image/mod02.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
+          </div>
+
+          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px]">
+            <h2 class="text-[1.2rem] font-bold text-green-400">CrossFit</h2>
+            <p class="text-[0.9rem] text-[#ccc]">Treino de alta intensidade, combina força, cardio e funcional..</p>
+          </div>
+        </div>
+
+        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
+          <div class="">
+            <img src="./image/mod03.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
+          </div>
+
+          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px] ">
+            <h2 class="text-[1.2rem] font-bold text-green-400">Yoga</h2>
+            <p class="text-[0.9rem] text-[#ccc]">Foco em flexibilidade, força leve, equilíbrio e relaxamento.</p>
+          </div>
+        </div>
+
+        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
+          <div class="">
+            <img src="./image/mod02.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
+          </div>
+
+          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px] ">
+            <h2 class="text-[1.2rem] font-bold text-green-400">Dança</h2>
+            <p class="text-[0.9rem] text-[#ccc]">Foco em condicionamento físico, coordenação e diversão.</p>
+          </div>
+        </div>
+
+        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
+          <div class="">
+            <img src="./image/mod03.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
+          </div>
+
+          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px] ">
+            <h2 class="text-[1.2rem] font-bold text-green-400">Lutas / Artes Marciais</h2>
+            <p class="text-[0.9rem] text-[#ccc]">Foco em coordenação, força, resistência e autodefesa.</p>
+          </div>
+        </div>
+
+        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
+          <div class="">
+            <img src="./image/mod01.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
+          </div>
+
+          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px]">
+            <h2 class="text-[1.2rem] font-bold text-green-400">Aulas Coletivas</h2>
+            <p class="text-[0.9rem] text-[#ccc]">Motivação em grupo e acompanhamento do instrutor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Plans -->
+    <section class="md:mt-40 mt-20">
+      <div class="container text-white  w-full mx-auto">
+        <div class="text-center">
+          <h2 class="text-5xl text-green-400 font-semibold pb-4">Nossos Planos</h2>
+          <p class="text-[#ccc]">Escolha o plano ideal para seus objetivos</p>
+        </div>
+        <div
+          class="content w-5xl grid grid-cols-1 md:grid-cols-3 mx-auto justify-center my-15  gap-5 sm:grid-cols-[repeat(auto-fit,_minmax(100px,1fr))]">
+
+          <div class=" bg-[#111] w-[300px] rounded-md flex flex-col items-center justify-around p-10 gap-5 hover:-translate-y-2 transition-transform duration-500 ">
+
+            <div>
+              <h3 class="text-3xl font-semibold text-green-400/50 pb-3 text-center uppercase">Básico</h3>
+              <div class="price">
+                <span class="text-green-300">R$</span>
+                <span class="text-5xl text-green-300">99</span>
+                <span class="text-[#ccc]">/mês</span>
+              </div>
+
+            </div>
+
+
+
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Musculação</p>
+
+            </div>
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Zona Cardio</p>
+
+            </div>
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Vestiários</p>
+
+            </div>
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Avaliação Fisíca</p>
+            </div>
+
+            <div>
+              <button class="bg-green-400/60 w-[170px] p-3 rounded-md font-semibold cursor-pointer">
+                Escolher Plano
+              </button>
+            </div>
+          </div>
+
+          <div
+            class=" bg-[#111] w-[300px] rounded-md flex flex-col items-center justify-around p-10 gap-5 relative border border-green-300 hover:-translate-y-2 transition-transform duration-500">
+
+            <div>
+              <h3 class="text-3xl font-semibold text-green-400/50 pb-3 text-center uppercase">Avançado</h3>
+              <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full green-pop w-[150px] p-2 text-center">
+                <p class="font-bold text-black">Mais Popular</p>
+              </div>
+              <div class="price">
+                <span class="text-green-300">R$</span>
+                <span class="text-5xl text-green-300">169</span>
+                <span class="text-[#ccc]">/mês</span>
+              </div>
+
+            </div>
+
+
+
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Musculação</p>
+
+            </div>
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Zona Cardio</p>
+
+            </div>
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Vestiários</p>
+
+            </div>
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Avaliação Fisíca</p>
+            </div>
+
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Nutricionista</p>
+            </div>
+
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Estacionamento gratuito</p>
+            </div>
+
+            <div>
+              <button class="bg-green-400/60 w-[170px] p-3 rounded-md font-semibold cursor-pointer">
+                Escolher Plano
+              </button>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class=" bg-[#111] w-[300px] rounded-md flex flex-col items-center justify-around p-10 gap-5 hover:-translate-y-2 transition-transform duration-500">
+
+            <div>
+              <h3 class="text-3xl font-semibold text-green-400/50 pb-3 text-center">PRO</h3>
+              <div class="price">
+                <span class="text-green-300">R$</span>
+                <span class="text-5xl text-green-300">299</span>
+                <span class="text-[#ccc]">/mês</span>
+              </div>
+
+            </div>
+
+
+
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Personal Trainer</p>
+
+            </div>
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Hórario Especial</p>
+
+            </div>
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Acesso ilimitado</p>
+
+            </div>
+            <div class="flex gap-1">
+              <i class="bi bi-check-lg text-green-400"></i>
+              <p>Move+ App</p>
+            </div>
+
+            <div>
+              <button class="bg-green-400/60 w-[170px] p-3 rounded-md font-semibold cursor-pointer">
+                Escolher Plano
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Instrutors -->
+    <section>
+
+      <div class="container text-white w-full mx-auto mt-40">
+        <div class="text-center">
+          <h2 class="text-5xl text-green-400 font-semibold pb-4"> Nossos Instrutores</h2>
+          <p class="text-[#ccc]">Profissionais especialistas para te ajudar</p>
+        </div>
+
+
+        <div class="content grid grid-cols-1 md:grid-cols-4 mx-auto w-6xl my-15 gap-5">
+
+          <div
+            class="card bg-[#111] w-[90%]  md:w-[270px] flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+            <div class="mb-5">
+              <img src="./image/instru01.jpg" alt=""
+                class="w-[100px] rounded-full h-[100px] object-cover border border-green-500 border-[2px]">
+            </div>
+
+            <div class="content-card flex items-center flex-col gap-2 text-center">
+              <h3 class="font-bold text-[1.2rem] ">Mariana Maria</h3>
+              <span class="text-green-300">Especialista em Musculação</span>
+              <span class="text-[#ccc]">3 anos de experiencia</span>
+            </div>
+          </div>
+
+
+
+          <div
+            class="card bg-[#111] max-w-sm   w-full md:w-[270px] flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+            <div class="mb-5">
+              <img src="./image/instru02.jpg" alt=""
+                class="w-[100px] rounded-full h-[100px] object-cover border border-green-500 border-[2px]">
+            </div>
+
+            <div class="content-card flex items-center flex-col gap-2 text-center">
+              <h3 class="font-bold text-[1.2rem] ">Jorge Yurk</h3>
+              <span class="text-green-300">Instrutor de CrossFit</span>
+              <span class="text-[#ccc]">5 anos de experiencia</span>
+            </div>
+          </div>
+
+
+
+          <div class="card bg-[#111]  max-w-sm md:w-[270px] flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+            <div class="mb-5">
+              <img src="./image/instru01.jpg" alt=""
+                class="w-[100px] rounded-full h-[100px] object-cover border border-green-500 border-[2px]">
+            </div>
+
+            <div class="content-card flex items-center flex-col gap-2 text-center">
+              <h3 class="font-bold text-[1.2rem] ">Helena Moura</h3>
+              <span class="text-green-300">Instrutora de Pilates</span>
+              <span class="text-[#ccc]">7 anos de experiencia</span>
+            </div>
+          </div>
+
+          <div class="card bg-[#111]  max-w-sm md:w-[270px] flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+            <div class="mb-5">
+              <img src="./image/instru02.jpg" alt=""
+                class="w-[100px] rounded-full h-[100px] object-cover border border-green-500 border-[2px]">
+            </div>
+
+            <div class="content-card flex items-center flex-col gap-2 text-center">
+              <h3 class="font-bold text-[1.2rem] ">Gabriel Salles</h3>
+              <span class="text-green-300">Personal Trainer</span>
+              <span class="text-[#ccc]">6 anos de experiencia</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Depoiment -->
+    <section>
+      <div class="mt-40">
+        <div class="text-center">
+          <h2 class="text-5xl text-green-400 font-semibold pb-4">Depoimentos</h2>
+          <p class="text-[#ccc]">Depoimentos de quem alcançou seus objetivos aqui</p>
+        </div>
+
+        <div class="content my-10 flex justify-center">
+
+
+          <div
+            class="card-content shadow-[0_10px_30px]  w-[570px] rounded-md p-5 flex flex-col items-center gap-5 justify-center  relative">
+
+            <div class="text-[#bbb]">
+
+              <button class="absolute top-1/2 -translate-y-1/2 -left-20 text-5xl cursor-pointer" id="arrowLeft">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+
+              <button class=" absolute top-1/2 -right-20 -translate-y-1/2 text-5xl cursor-pointer" id="arrowRight">
+                <i class="bi bi-chevron-right "></i>
+              </button>
+
+
+            </div>
+
+
+
+
+
+            <div id="content-depoiment" class="flex flex-col items-center gap-4">
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <div class="mt-40 text-white">
+        <div class="text-center">
+          <h2 class="text-5xl text-green-400 font-semibold pb-4">Fale Conosco</h2>
+          <p class="text-[#ccc]">Entre em contato para tirar dúvidas, agendar avaliação ou saber mais</p>
+        </div>
+
+        <div class="flex justify-center gap-10 my-20">
+
+             <div class="flex flex-col gap-4">
+                <div class="flex items-center bg-[#222] w-[400px] p-5 rounded-md shadow shadow-2xl gap-5 ">
+            <i class="bi bi-geo-alt text-3xl text-green-300"></i>
+
+            <div>
+              <p class="font-bold text-[1.2rem]">Localização</p>
+              <p class="text-[0.9rem]">Sao Paulo - SP</p>
+              <p class="text-[0.9rem]">Rua Exemplo, 123 - Centro</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="flex items-center bg-[#222] w-[400px] p-5 rounded-md shadow shadow-2xl gap-5">
+            <i class="bi bi-telephone text-3xl text-green-300"></i>
+
+
+            <div>
+              <p class="font-bold text-[1.2rem]">Telefone</p>
+              <p class="text-[0.9rem]">(11) 99999-9999</p>
+
+            </div>
+          </div>
+
+
+
+
+          <div class="flex items-center bg-[#222] w-[400px] p-5 rounded-md shadow shadow-2xl gap-5">
+            <i class="bi bi-clock text-3xl text-green-300"></i>
+
+
+            <div>
+              <p class="font-bold text-[1.2rem]">Hórario</p>
+              <p class="text-[0.9rem]">Seg á Sex: 6h ás 22h</p>
+              <p class="text-[0.9rem]">Sábado: 8h ás 14h</p>
+            </div>
+          </div>
+
+
+          <div class="flex items-center bg-[#222] w-[400px] p-5 rounded-md shadow shadow-2xl gap-5">
+            <i class="bi bi-envelope text-3xl text-green-300"></i>
+
+
+            <div>
+              <p class="font-bold text-[1.2rem] pb-1">Email</p>
+              <p class="text-[0.9rem]">contato@moveacademia.com</p>
+
+            </div>
+          </div>
+
+
+
+
+             </div>
+
+
+
+   
+
+
+        <div>
+          <form action="" class="flex flex-col bg-[#222] w-[450px] rounded-md py-10 px-5 shadow shadow-3xl shadow-[#121212]  gap-5 ">
+
+            <div class="flex justify-center gap-3">
+              <input type="text" placeholder="Seu Nome" class="rounded-md p-2 w-full outline-none border border-[#ccc] focus:border-green-300 transition duration-500 focus:shadow focus:shadow-7xl focus:shadow-[#555] focus:rounded-[0_0_10px]  focus:border-[2px] placeholder:text-[0.9rem] ">
+
+              <input type="text" placeholder="Seu Email" class="rounded-md p-2 w-full outline-none border border-[#ccc] focus:border-green-300 transition duration-500 focus:shadow focus:shadow-7xl focus:shadow-[#555] focus:rounded-[0_0_10px]  focus:border-[2px] placeholder:text-[0.9rem]">
+            </div>
+
+            <div>
+              <input type="tel" placeholder="Seu Telefone" class=" rounded-md p-3 w-full outline-none border border-[#ccc] focus:border-green-300 transition duration-500 focus:shadow focus:shadow-7xl focus:shadow-[#555] focus:rounded-[0_0_10px]  focus:border-[2px] placeholder:text-[0.9rem]" >
+            </div>
+
+            <div>
+              <textarea name="" id="" placeholder="Sua Mensagem" class="w-full rounded-md p-2 outline-none border border-[#ccc] focus:border-green-300 transition duration-500 focus:shadow focus:shadow-7xl focus:shadow-[#555] focus:rounded-[10px_0_0] focus:border-[2px] placeholder:text-[0.9rem]"></textarea>
+            </div>
+
+
+            <div>
+              <button class="bg-green-300/90 py-3 px-7 rounded-full text-black font-bold    uppercase cursor-pointer 
+               hover:-translate-y-1  transition-all duration-500 hover:opacity-[0.8] hover:shadow-2xl hover:shadow-[#111] hover:shadow">
+                Enviar Mensagem
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="bg-black p-10">
+     <div class=" text-white grid grid-cols-4 max-w-6xl mx-auto grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-5">
+        <div class="flex flex-col gap-2">
+          <h2 class="font-bold italic text-4xl text-green-400">Move+</h2>
+           <p class="text-[#ccc]">Transformando corpos e mentes através da dedicação e do treino.</p>
+        </div>
+
+
+        <div class="flex flex-col gap-2 text-[#ccc]">
+           <h3 class="text-green-300 font-bold text-[1.1rem]">Links Rápidos</h3>
+           <a href="#home" class="hover:text-green-300/70 transition duration-300 ">Inicio</a>
+           <a href="#about" class="hover:text-green-300/70 transition duration-300 ">Sobre Nós</a>
+           <a href="#modalidades" class="hover:text-green-300/70 transition duration-300 ">Modalidades</a>
+           <a href="#plans" class="hover:text-green-300/70 transition duration-300 ">Planos</a>
+           <a href="instrustors" class="hover:text-green-300/70 transition duration-300 ">Instrutores</a>
+           <a href="contact" class="hover:text-green-300/70 transition duration-300 ">Contato</a>
+        </div>
+
+
+
+
+        <div class="flex flex-col gap-3">
+            <h3 class="text-green-300 font-bold text-[1.1rem]">Contato</h3>
+
+           <div class="flex gap-2 items-center">
+             <i class="bi bi-telephone text-[1.3rem] text-green-300"></i>
+             <span>(11) 99999-9999</span>
+           </div>
+
+
+           <div class="flex gap-2 items-center">
+             <i class="bi bi-envelope text-[1.3rem] text-green-300"></i>
+             <span>contato@moveacademia.com</span>
+           </div>
+        </div>
+
+
+
+        <div class="flex flex-col gap-3">
+           <h3 class="text-green-300 font-bold text-[1.1rem]">Redes Sociais</h3>
+            <div class="flex gap-5">
+                <a href="#" class=" bg-[#333]  rounded-full h-[40px] w-[40px] text-center flex items-center justify-center  hover:bg-green-300/70 transition duration-300">
+                  <i class="bi bi-instagram  "></i>
+                </a>
+
+                <a href="#"  class=" bg-[#333]  rounded-full h-[40px] w-[40px] text-center flex items-center justify-center  hover:bg-green-300/70 transition duration-300">
+                  <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#"  class=" bg-[#333]  rounded-full h-[40px] w-[40px] text-center flex items-center justify-center hover:bg-green-300/70 transition duration-300">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+
+            </div>
+        </div>
+     </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
