@@ -19,24 +19,21 @@
     .font {
       font-family: "Roboto", sans-serif;
     }
-
     .bg-hero {
       background: linear-gradient(135deg, #000 0%, #151914 80%);
     }
-
     .bg-about {
       background: linear-gradient(115deg, #000 0%, #151f1a 100%);
     }
-
     .green-pop {
       background-color: rgb(47, 185, 86);
-    }
-    
-  </style>
+    } </style>
+
+
 </head>
 
-<body class="bg-hero overflow-x-hidden">
-  <header class="flex justify-around items-center bg-black text-white h-15 md:h-20 fixed w-full z-10">
+<body class="bg-hero overflow-x-hidden" id="inicio">
+  <header class="flex justify-around items-center bg-black text-white h-17 md:h-15 md:h-20 fixed w-full z-10">
     <div class="logo">
       <h2 class="font-bold italic text-3xl md:text-[2.2rem] text-green-400">Move+</h2>
     </div>
@@ -59,11 +56,48 @@
         <li><a href="" class="text-[1rem] font-semibold hover:text-green-300/80 transition-all duration-300">Contato</a>
         </li>
       </ul>
-
-      <div class="menuMobile">
-         
-      </div>
     </nav>
+
+
+
+
+
+    <div class="menuMobile md:hidden">
+      <button>
+            <div id="menuToggle" class="transition-all transform rotate-0 duration-700">
+           <i class="bi bi-list text-3xl cursor-pointer text-green-400 "></i>
+         </div>
+
+         <div class="hidden transition-all duration-700 transform rotate-0" id="menuX">
+           <i class="bi bi-x-lg text-green-400 text-3xl font-bold "></i>
+         </div>
+
+      </button>
+
+      
+
+         
+    <nav id="" >
+      <ul class="flex flex-col absolute justify-items-center left-1/2 -translate-x-1/2 text-center w-full h-70  justify-center bg-[#000] top-17 gap-2 hidden  border-t border-green-300" id="menuMobile">
+        <li><a href="#inicio" class="text-[1.1rem]  hover:text-green-300/80 transition-all duration-300 text-[#ccc]">Inicio</a>
+        </li>
+        <li><a href="#about-us" class="text-[1.1rem]  hover:text-green-300/80 transition-all duration-300 text-[#ccc]">Sobre</a>
+        </li>
+
+
+        
+        <li><a href=""
+            class="text-[1.1rem] hover:text-green-300/80 transition-all duration-300 text-[#ccc]">Modalidades</a></li>
+        <li><a href="" class="text-[1.1rem]  hover:text-green-300/80 transition-all duration-300 text-[#ccc]">Planos</a>
+        </li>
+        <li><a href=""
+            class="text-[1.1rem]  hover:text-green-300/80 transition-all duration-300 text-[#ccc]">Instrutores</a></li>
+        <li><a href="" class="text-[1.1rem]  hover:text-green-300/80 transition-all duration-300 text-[#ccc]">Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+      </div>
   </header>
 
   <main class="font">
@@ -108,7 +142,7 @@
     </section>
 
     <!-- About-us -->
-    <section class="md:mt-40 mt-20">
+    <section class="md:mt-40 mt-20" id="about-us">
       <div class=" container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-12 text-white">
 
         <div class="flex flex-col gap-8 lg:w-1/2 ">
@@ -161,18 +195,19 @@
     </section>
 
     <!-- Modalidades -->
-    <section class=" md:mt-40 mt-20">
-      <div class="title text-center ">
-        <h2 class="text-5xl text-green-400 font-semibold pb-4">Modalidades</h2>
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+          <div class="title text-center mb-12">
+        <h2 class="text-4xl md:text-5xll text-green-400 font-semibold pb-4">Modalidades</h2>
         <p class="text-[#ccc]">Diversas opções para voce se exercitar</p>
       </div>
 
       <div
-        class="text-white gap-5 max-w-6xl mx-auto grid   justify-center grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(250px,1fr))] md:grid-cols-3 p-10">
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
 
-        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
+        <div class="card w-full max-w-sm overflow-hidden rounded-lg bg-[#222] hover:-translate-y-2 transition-transform duration-500">
           <div class="">
-            <img src="./image/mod01.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
+            <img src="./image/mod01.jpg" alt="Musculação" class="w-full  h-48 object-cover [5px_5px_0_0]">
           </div>
 
           <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px]">
@@ -181,75 +216,64 @@
           </div>
 
         </div>
-        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
-          <div class="">
-            <img src="./image/mod02.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
-          </div>
-
-          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px]">
-            <h2 class="text-[1.2rem] font-bold text-green-400">CrossFit</h2>
-            <p class="text-[0.9rem] text-[#ccc]">Treino de alta intensidade, combina força, cardio e funcional..</p>
-          </div>
-        </div>
-
-        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
-          <div class="">
-            <img src="./image/mod03.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
-          </div>
-
-          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px] ">
-            <h2 class="text-[1.2rem] font-bold text-green-400">Yoga</h2>
-            <p class="text-[0.9rem] text-[#ccc]">Foco em flexibilidade, força leve, equilíbrio e relaxamento.</p>
-          </div>
-        </div>
-
-        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
-          <div class="">
-            <img src="./image/mod02.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
-          </div>
-
-          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px] ">
-            <h2 class="text-[1.2rem] font-bold text-green-400">Dança</h2>
-            <p class="text-[0.9rem] text-[#ccc]">Foco em condicionamento físico, coordenação e diversão.</p>
-          </div>
-        </div>
-
-        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
-          <div class="">
-            <img src="./image/mod03.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
-          </div>
-
-          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px] ">
-            <h2 class="text-[1.2rem] font-bold text-green-400">Lutas / Artes Marciais</h2>
-            <p class="text-[0.9rem] text-[#ccc]">Foco em coordenação, força, resistência e autodefesa.</p>
-          </div>
-        </div>
-
-        <div class="card w-[300px] hover:-translate-y-2 transition-transform duration-500">
-          <div class="">
-            <img src="./image/mod01.jpg" alt="" class="w-[300px] rounded-[5px_5px_0_0]">
-          </div>
-
-          <div class="card-content p-3 bg-[#222] rounded-[0px_0_5px_5px]">
-            <h2 class="text-[1.2rem] font-bold text-green-400">Aulas Coletivas</h2>
-            <p class="text-[0.9rem] text-[#ccc]">Motivação em grupo e acompanhamento do instrutor.</p>
-          </div>
+         <div class="card w-full max-w-sm overflow-hidden rounded-lg bg-[#222] hover:-translate-y-2 transition-transform duration-500">
+        <img src="./image/mod02.jpg" alt="CrossFit" class="w-full h-48 object-cover">
+        <div class="card-content p-4">
+          <h2 class="text-xl font-bold text-green-400">CrossFit</h2>
+          <p class="text-sm text-[#ccc]">Treino de alta intensidade, combina força, cardio e funcional.</p>
         </div>
       </div>
+
+      <div class="card w-full max-w-sm overflow-hidden rounded-lg bg-[#222] hover:-translate-y-2 transition-transform duration-500">
+        <img src="./image/mod03.jpg" alt="Yoga" class="w-full h-48 object-cover">
+        <div class="card-content p-4">
+          <h2 class="text-xl font-bold text-green-400">Yoga</h2>
+          <p class="text-sm text-[#ccc]">Foco em flexibilidade, força leve, equilíbrio e relaxamento.</p>
+        </div>
+      </div>
+      
+      <div class="card w-full max-w-sm overflow-hidden rounded-lg bg-[#222] hover:-translate-y-2 transition-transform duration-500">
+        <img src="./image/mod02.jpg" alt="Dança" class="w-full h-48 object-cover">
+        <div class="card-content p-4">
+          <h2 class="text-xl font-bold text-green-400">Dança</h2>
+          <p class="text-sm text-[#ccc]">Foco em condicionamento físico, coordenação e diversão.</p>
+        </div>
+      </div>
+
+      <div class="card w-full max-w-sm overflow-hidden rounded-lg bg-[#222] hover:-translate-y-2 transition-transform duration-500">
+        <img src="./image/mod03.jpg" alt="Lutas" class="w-full h-48 object-cover">
+        <div class="card-content p-4">
+          <h2 class="text-xl font-bold text-green-400">Lutas / Artes Marciais</h2>
+          <p class="text-sm text-[#ccc]">Foco em coordenação, força, resistência e autodefesa.</p>
+        </div>
+      </div>
+
+      <div class="card w-full max-w-sm overflow-hidden rounded-lg bg-[#222] hover:-translate-y-2 transition-transform duration-500">
+        <img src="./image/mod01.jpg" alt="Aulas Coletivas" class="w-full h-48 object-cover">
+        <div class="card-content p-4">
+          <h2 class="text-xl font-bold text-green-400">Aulas Coletivas</h2>
+          <p class="text-sm text-[#ccc]">Motivação em grupo e acompanhamento do instrutor.</p>
+        </div>
+      </div>
+    </div>
+      </div>
+     
     </section>
 
 
     <!-- Plans -->
-    <section class="md:mt-40 mt-20">
-      <div class="container text-white  w-full mx-auto">
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6 text-white">
         <div class="text-center">
-          <h2 class="text-5xl text-green-400 font-semibold pb-4">Nossos Planos</h2>
+          <h2 class="text-4xl md:text-5xl text-green-400 font-semibold pb-4">Nossos Planos</h2>
           <p class="text-[#ccc]">Escolha o plano ideal para seus objetivos</p>
         </div>
-        <div
-          class="content w-5xl grid grid-cols-1 md:grid-cols-3 mx-auto justify-center my-15  gap-5 sm:grid-cols-[repeat(auto-fit,_minmax(100px,1fr))]">
 
-          <div class=" bg-[#111] w-[300px] rounded-md flex flex-col items-center justify-around p-10 gap-5 hover:-translate-y-2 transition-transform duration-500 ">
+
+        <div
+          class="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center my-15 md:gap-4">
+
+          <div class=" bg-[#111] rounded-md flex flex-col items-center justify-around p-10 gap-5 hover:-translate-y-2 transition-transform duration-500  w-full max-w-sm">
 
             <div>
               <h3 class="text-3xl font-semibold text-green-400/50 pb-3 text-center uppercase">Básico</h3>
@@ -291,7 +315,7 @@
           </div>
 
           <div
-            class=" bg-[#111] w-[300px] rounded-md flex flex-col items-center justify-around p-10 gap-5 relative border border-green-300 hover:-translate-y-2 transition-transform duration-500">
+            class=" bg-[#111] w-full rounded-md flex flex-col items-center justify-around p-10 gap-5 relative border border-green-300 hover:-translate-y-2 transition-transform duration-500 max-w-sm ">
 
             <div>
               <h3 class="text-3xl font-semibold text-green-400/50 pb-3 text-center uppercase">Avançado</h3>
@@ -350,10 +374,10 @@
 
 
 
-          <div class=" bg-[#111] w-[300px] rounded-md flex flex-col items-center justify-around p-10 gap-5 hover:-translate-y-2 transition-transform duration-500">
+          <div class=" bg-[#111] w-full rounded-md flex flex-col items-center justify-around p-10 gap-5 hover:-translate-y-2 transition-transform duration-500 max-w-sm w-full cols-span-full">
 
             <div>
-              <h3 class="text-3xl font-semibold text-green-400/50 pb-3 text-center">PRO</h3>
+              <h3 class="text-3xl font-semibold text-green-400/50 pb-3 text-center ">PRO</h3>
               <div class="price">
                 <span class="text-green-300">R$</span>
                 <span class="text-5xl text-green-300">299</span>
@@ -399,17 +423,18 @@
     <!-- Instrutors -->
     <section>
 
-      <div class="container text-white w-full mx-auto mt-40">
-        <div class="text-center">
-          <h2 class="text-5xl text-green-400 font-semibold pb-4"> Nossos Instrutores</h2>
+      <div class="container mx-auto px-6 text-white">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl text-green-400 font-semibold pb-4"> Nossos Instrutores</h2>
           <p class="text-[#ccc]">Profissionais especialistas para te ajudar</p>
         </div>
 
 
-        <div class="content grid grid-cols-1 md:grid-cols-4 mx-auto w-6xl my-15 gap-5">
+        <div class="content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
 
           <div
-            class="card bg-[#111] w-[90%]  md:w-[270px] flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+            class="card bg-[#111] w-full max-w-sm   flex flex-col items-center justify-center py-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+
             <div class="mb-5">
               <img src="./image/instru01.jpg" alt=""
                 class="w-[100px] rounded-full h-[100px] object-cover border border-green-500 border-[2px]">
@@ -425,7 +450,7 @@
 
 
           <div
-            class="card bg-[#111] max-w-sm   w-full md:w-[270px] flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+            class="card bg-[#111] flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300 w-full max-w-sm">
             <div class="mb-5">
               <img src="./image/instru02.jpg" alt=""
                 class="w-[100px] rounded-full h-[100px] object-cover border border-green-500 border-[2px]">
@@ -440,7 +465,7 @@
 
 
 
-          <div class="card bg-[#111]  max-w-sm md:w-[270px] flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+          <div class="card bg-[#111]   w-full max-w-sm flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
             <div class="mb-5">
               <img src="./image/instru01.jpg" alt=""
                 class="w-[100px] rounded-full h-[100px] object-cover border border-green-500 border-[2px]">
@@ -453,7 +478,7 @@
             </div>
           </div>
 
-          <div class="card bg-[#111]  max-w-sm md:w-[270px] flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
+          <div class="card bg-[#111]  w-full  max-w-sm  flex flex-col items-center justify-center p-10 rounded-xl hover:-translate-y-1 transition-transform duration-300">
             <div class="mb-5">
               <img src="./image/instru02.jpg" alt=""
                 class="w-[100px] rounded-full h-[100px] object-cover border border-green-500 border-[2px]">
@@ -480,26 +505,26 @@
 
 
     <!-- Depoiment -->
-    <section>
-      <div class="mt-40">
-        <div class="text-center">
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
           <h2 class="text-5xl text-green-400 font-semibold pb-4">Depoimentos</h2>
           <p class="text-[#ccc]">Depoimentos de quem alcançou seus objetivos aqui</p>
         </div>
 
-        <div class="content my-10 flex justify-center">
+        <div class="content flex justify-center">
 
 
           <div
-            class="card-content shadow-[0_10px_30px]  w-[570px] rounded-md p-5 flex flex-col items-center gap-5 justify-center  relative">
+            class="card-content shadow-[0_10px_30px] w-full max-w-2xl rounded-md p-8 flex flex-col items-center gap-5 justify-center  relative">
 
             <div class="text-[#bbb]">
 
-              <button class="absolute top-1/2 -translate-y-1/2 -left-20 text-5xl cursor-pointer" id="arrowLeft">
+              <button class="hidden md:block absolute top-1/2 -translate-y-1/2 -left-20 text-5xl cursor-pointer" id="arrowLeft">
                 <i class="bi bi-chevron-left"></i>
               </button>
 
-              <button class=" absolute top-1/2 -right-20 -translate-y-1/2 text-5xl cursor-pointer" id="arrowRight">
+              <button class="hidden md:block absolute top-1/2 -right-20 -translate-y-1/2 text-5xl cursor-pointer" id="arrowRight">
                 <i class="bi bi-chevron-right "></i>
               </button>
 
@@ -510,7 +535,7 @@
 
 
 
-            <div id="content-depoiment" class="flex flex-col items-center gap-4">
+            <div id="content-depoiment" class="flex flex-col items-center gap-4 text-center">
             </div>
 
 
@@ -522,17 +547,18 @@
     </section>
 
     <!-- Contact -->
-    <section>
-      <div class="mt-40 text-white">
-        <div class="text-center">
-          <h2 class="text-5xl text-green-400 font-semibold pb-4">Fale Conosco</h2>
+    <section class="py-16 md:py-24">
+      <div class="container mx-autp px-6 text-white">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl text-green-400 font-semibold pb-4">Fale Conosco</h2>
           <p class="text-[#ccc]">Entre em contato para tirar dúvidas, agendar avaliação ou saber mais</p>
         </div>
 
-        <div class="flex justify-center gap-10 my-20">
+        <div class="flex flex-col-reverse lg:flex-row justify-center items-center gap-10 ">
 
-             <div class="flex flex-col gap-4">
-                <div class="flex items-center bg-[#222] w-[400px] p-5 rounded-md shadow shadow-2xl gap-5 ">
+             <div class="flex flex-col gap-4 w-full max-w-md">
+
+                <div class="flex items-center bg-[#222] p-5 rounded-md shadow shadow-2xl gap-5 ">
             <i class="bi bi-geo-alt text-3xl text-green-300"></i>
 
             <div>
@@ -545,7 +571,7 @@
 
 
 
-          <div class="flex items-center bg-[#222] w-[400px] p-5 rounded-md shadow shadow-2xl gap-5">
+          <div class="flex items-center bg-[#222]  p-5 rounded-md shadow shadow-2xl gap-5">
             <i class="bi bi-telephone text-3xl text-green-300"></i>
 
 
@@ -559,7 +585,7 @@
 
 
 
-          <div class="flex items-center bg-[#222] w-[400px] p-5 rounded-md shadow shadow-2xl gap-5">
+          <div class="flex items-center bg-[#222]  p-5 rounded-md shadow shadow-2xl gap-5">
             <i class="bi bi-clock text-3xl text-green-300"></i>
 
 
@@ -571,7 +597,7 @@
           </div>
 
 
-          <div class="flex items-center bg-[#222] w-[400px] p-5 rounded-md shadow shadow-2xl gap-5">
+          <div class="flex items-center bg-[#222] w-full  p-5 rounded-md shadow shadow-2xl gap-5">
             <i class="bi bi-envelope text-3xl text-green-300"></i>
 
 
@@ -592,13 +618,13 @@
    
 
 
-        <div>
-          <form action="" class="flex flex-col bg-[#222] w-[450px] rounded-md py-10 px-5 shadow shadow-3xl shadow-[#121212]  gap-5 ">
+        <div class="w-full max-w-md">
+          <form action="" class="flex flex-col bg-[#222] w-full rounded-md py-10 px-5 shadow-lg gap-5 ">
 
-            <div class="flex justify-center gap-3">
-              <input type="text" placeholder="Seu Nome" class="rounded-md p-2 w-full outline-none border border-[#ccc] focus:border-green-300 transition duration-500 focus:shadow focus:shadow-7xl focus:shadow-[#555] focus:rounded-[0_0_10px]  focus:border-[2px] placeholder:text-[0.9rem] ">
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+              <input type="text" placeholder="Seu Nome" class="rounded-md p-3 w-full outline-none border border-[#ccc] focus:border-green-300 transition duration-500 focus:shadow focus:shadow-7xl focus:shadow-[#555] focus:rounded-[0_0_10px]  focus:border-[2px] placeholder:text-[0.9rem] ">
 
-              <input type="text" placeholder="Seu Email" class="rounded-md p-2 w-full outline-none border border-[#ccc] focus:border-green-300 transition duration-500 focus:shadow focus:shadow-7xl focus:shadow-[#555] focus:rounded-[0_0_10px]  focus:border-[2px] placeholder:text-[0.9rem]">
+              <input type="text" placeholder="Seu Email" class="rounded-md p-3 w-full outline-none border border-[#ccc] focus:border-green-300 transition duration-500 focus:shadow focus:shadow-7xl focus:shadow-[#555] focus:rounded-[0_0_10px]  focus:border-[2px] placeholder:text-[0.9rem]">
             </div>
 
             <div>
