@@ -35,7 +35,7 @@
 <body class="bg-hero overflow-x-hidden" id="inicio">
   <header class="flex justify-around items-center bg-black text-white h-17 md:h-15 md:h-20 fixed w-full z-10">
     <div class="logo">
-      <h2 class="font-bold italic text-3xl md:text-[2.2rem] text-green-400">Move+</h2>
+      <h2 class="font-bold italic text-4xl md:text-[2.2rem] text-green-400">Move+</h2>
     </div>
 
     <nav id="menu">
@@ -69,7 +69,7 @@
          </div>
 
          <div class="hidden transition-all duration-700 transform rotate-0" id="menuX">
-           <i class="bi bi-x-lg text-green-400 text-3xl font-bold "></i>
+           <i class="bi bi-x-lg text-[#ccc] text-3xl font-bold "></i>
          </div>
 
       </button>
@@ -103,14 +103,14 @@
   <main class="font">
     <!-- Hero -->
   
-    <section class="inicio-hero relative pt-20">
+    <section class="inicio-hero relative py-16 md:py-24">
 
     <div class="container-geral min-h-screen w-full  text-white flex  justify-center  md:justify-around items-center bg-hero md:flex-row flex-col h-full p-6 md:pt-20">
 
          <div class="contentPrimeiro flex flex-col gap-8 items-center justify-center text-center md:items-start md:text-left">
       
           <div  class="title uppercase font-bold">
-            <h1 class="flex flex-col text-2xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-[3.8rem] "> Treine Seu Corpo,
+            <h1 class="flex flex-col text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-[3.8rem] "> Treine Seu Corpo,
               <span>Sua Mente & Conquiste</span>
                <span class="text-green-400"> Resultados Reais</span>
             </h1>
@@ -142,7 +142,7 @@
     </section>
 
     <!-- About-us -->
-    <section class="md:mt-40 mt-20" id="about-us">
+    <section class="py-16 md:py-24" id="about-us">
       <div class=" container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-12 text-white">
 
         <div class="flex flex-col gap-8 lg:w-1/2 ">
@@ -421,7 +421,7 @@
     </section>
 
     <!-- Instrutors -->
-    <section>
+    <section class="py-16 md:py-24">
 
       <div class="container mx-auto px-6 text-white">
         <div class="text-center mb-12">
@@ -518,7 +518,7 @@
           <div
             class="card-content shadow-[0_10px_30px] w-full max-w-2xl rounded-md p-8 flex flex-col items-center gap-5 justify-center  relative">
 
-            <div class="text-[#bbb]">
+            <div class="text-[#bbb] hidden md:block">
 
               <button class="hidden md:block absolute top-1/2 -translate-y-1/2 -left-20 text-5xl cursor-pointer" id="arrowLeft">
                 <i class="bi bi-chevron-left"></i>
@@ -537,12 +537,17 @@
 
             <div id="content-depoiment" class="flex flex-col items-center gap-4 text-center">
             </div>
-
-
-
-
-
           </div>
+  
+        </div>
+        
+
+        <div class="circles flex items-center justify-center w-full pt-5 gap-4 md:hidden">
+
+           <button id="bolinha1" class=" w-[22px] h-[22px] rounded-full bg-[#555]"></button>
+           <button id="bolinha2" class="w-[22px] h-[22px] rounded-full bg-[#555]"></button>
+           <button id="bolinha3" class="w-[22px] h-[22px] rounded-full bg-[#555]"></button>
+        
         </div>
     </section>
 
@@ -649,7 +654,7 @@
   </main>
 
 
-  <footer class="bg-black p-10">
+  <footer class="bg-black py-16 md:py-24 px-2">
      <div class=" text-white grid grid-cols-4 max-w-6xl mx-auto grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-5">
         <div class="flex flex-col gap-2">
           <h2 class="font-bold italic text-4xl text-green-400">Move+</h2>

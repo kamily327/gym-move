@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded' , function(){
-
 const depoimentoContent = [{
     texto: '“Comecei com insegurança e sem saber treinar direito. Os instrutores tiveram toda a paciência do mundo e me motivaram desde o primeiro dia. Em três meses já vi diferença no meu corpo e na minha autoestima!”',
     image: '../image/depo01.jpg',
@@ -7,6 +6,7 @@ const depoimentoContent = [{
     tempo: 'Aluna há 3 meses',
     alt: 'Sofia Lemos' 
 },
+
  {
   texto: '“Achava academia chato, mas com os treinos e o apoio que recebo aqui, virei outra pessoa. Tenho mais disposição, perdi peso e não me sinto sozinho no processo. É uma experiência de verdade, não só máquinas.”',
   image: '../image/depo02.jpg',
@@ -22,15 +22,8 @@ const depoimentoContent = [{
  nome:'Lucas Talles',
  tempo: 'Aluno há 6 meses',
  alt: 'Lucas Talles' ,
+}];
 
- }
-
-   
-
-   
-
-
-];
 
 let indiceAtual = 0;
 
@@ -38,7 +31,7 @@ let indiceAtual = 0;
 function mostrarDepoimento(){
     const depoimento = depoimentoContent[indiceAtual];
 
-    const contentDepoiment = document.getElementById('content-depoiment')
+    const contentDepoiment = document.getElementById('content-depoiment');
 
 contentDepoiment.innerHTML = `
          <div class="text-orange-400 text-[1.4rem]">
@@ -67,7 +60,37 @@ contentDepoiment.innerHTML = `
 
 
 const arrowEsquerda = document.getElementById('arrowLeft');
-  const arrowDireita = document.getElementById('arrowRight');
+const arrowDireita = document.getElementById('arrowRight');
+
+const bolinhaOne = document.getElementById('bolinha1');
+const bolinhaTwo = document.getElementById('bolinha2');
+const bolinhaThree = document.getElementById('bolinha3');
+
+bolinhaOne.addEventListener('click', function() {
+  indiceAtual = 0;
+  bolinhaOne.classList.add('bg-orange-400');
+  bolinhaTwo.classList.remove('bg-orange-400');
+  bolinhaThree.classList.remove('bg-orange-400');
+});
+
+bolinhaTwo.addEventListener('click', function() {
+  indiceAtual = 1;
+     bolinhaOne.classList.remove('bg-orange-400');
+  bolinhaTwo.classList.add('bg-orange-400');
+  bolinhaThree.classList.remove('bg-orange-400');
+
+  mostrarDepoimento();
+});
+
+bolinhaThree.addEventListener('click', function() {
+  indiceAtual = 2;
+    bolinhaOne.classList.remove('bg-orange-400');
+    bolinhaTwo.classList.remove('bg-orange-400');
+    bolinhaThree.classList.add('bg-orange-400');
+  mostrarDepoimento();
+});
+
+  
 
 
 arrowDireita.addEventListener('click' , function(){
@@ -78,6 +101,7 @@ arrowDireita.addEventListener('click' , function(){
     }
 
     mostrarDepoimento()
+  
 })
 
 
@@ -90,14 +114,18 @@ arrowDireita.addEventListener('click' , function(){
        }
 
        mostrarDepoimento()
-    })
-         mostrarDepoimento() 
+      
+    });
 
+    mostrarDepoimento() 
 
       
- });
+  
+
+});
 
 
+// MENU MOBILE
 let menuToggle = document.getElementById('menuToggle');
 let menuX = document.getElementById('menuX')
 let menuList = document.getElementById('menuMobile')
@@ -109,21 +137,18 @@ menuListLinks.forEach( links =>{
       menuX.classList.add('hidden')
       menuToggle.classList.remove('hidden')
    })
-})
+});
 
 
 menuToggle.addEventListener('click' , function(){
-  menuToggle.classList.add("hidden")
-  menuX.classList.remove('hidden')
-  menuList.classList.remove('hidden')
+      menuToggle.classList.add("hidden")
+      menuX.classList.remove('hidden')
+      menuList.classList.remove('hidden')
 
-})
+});
+
 menuX.addEventListener('click' , function(){
-    menuToggle.classList.remove('hidden')
-    menuX.classList.add('hidden')
-    menuList.classList.add('hidden')
-})
-
- 
-  
-    
+      menuToggle.classList.remove('hidden')
+      menuX.classList.add('hidden')
+      menuList.classList.add('hidden')
+});
